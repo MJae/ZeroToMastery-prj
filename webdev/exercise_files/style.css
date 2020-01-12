@@ -1,0 +1,28 @@
+/*Selector {
+	property: value;
+}*/
+
+body {
+	background-image: url(alex-seinet-Evb5GA0181k-unsplash.jpg);
+	background-size: cover;
+}
+
+h2 {
+	color: #FFFFFF;
+	text-align: center;
+	border: 5px solid #FFFFFF;
+	cursor: pointer;
+}
+
+p {
+	color: pink;
+}
+
+p {
+	color: green;
+}
+
+li {
+	list-style: none;
+	display: inline-block;
+}
