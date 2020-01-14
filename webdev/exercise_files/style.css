@@ -2,6 +2,10 @@
 	property: value;
 }*/
 
+* {
+	text-align: right;
+}
+
 body {
 	background-image: url(alex-seinet-Evb5GA0181k-unsplash.jpg);
 	background-size: cover;
@@ -9,20 +13,45 @@ body {
 
 h2 {
 	color: #FFFFFF;
-	text-align: center;
-	border: 5px solid #FFFFFF;
+	text-align: right;
 	cursor: pointer;
 }
 
 p {
-	color: pink;
+	border: 5px solid #FFFFFF;
+	line-height: 30px;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 100%;
+	font-family: 'Poiret One', cursive;
 }
 
-p {
-	color: green;
+img {
+	float: right;
+}
+
+footer {
+	clear: both;
+	text-align: center;
 }
 
 li {
 	list-style: none;
 	display: inline-block;
+}
+
+.webtext {
+	border: 5px dashed green
+}
+
+.active {
+	color: red;
+}
+
+#div1 {
+	background: rgba(0, 0, 255, 0.2);
+}
+
+#div2 {
+	background: rgba(255, 0, 0, 0.2);	
 }
