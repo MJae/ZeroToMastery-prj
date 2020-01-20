@@ -1,6 +1,12 @@
+.body {
+    margin: 0px;
+}
+
+.container {
+    display: grid;
+}
+
 .zone {
-    padding:30px 50px;
-    margin:40px 60px;
     cursor:pointer;
     display:inline-block;
     color:#FFF;
@@ -68,4 +74,42 @@
     background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+nav {
+    display: flex;
+    margin: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 1.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 75%;
+}
+
+nav ul li {
+    padding: 0px 10px;
+}
+
+.contact {
+    text-align: right;
+}
+
+.prj-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.prj-item {
+    background-color: grey;
+    text-align: center;
+    padding: 40px;
+}
+
+.prj-grid img {
+    height: 75px;
 }
