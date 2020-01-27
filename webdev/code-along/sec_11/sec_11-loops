@@ -1,0 +1,11 @@
+var todo = [
+  "clean room",
+  "brush teeth",
+  "exercise",
+  "study javascript",
+  "eath healthy"
+];
+
+for (var i = 0; i < todo.length; i++) {
+  todo[i] = todo[i] + '!';
+}
