@@ -9,3 +9,15 @@ var todo = [
 for (var i = 0; i < todo.length; i++) {
   todo[i] = todo[i] + '!';
 }
+
+todo.forEach(function(item, i) {
+  // first arg returns content
+  // second returns index
+  console.log(item, i);
+})
+
+function logTodo(i) {
+  console.log(i);
+}
+
+todo.forEach(logTodo);

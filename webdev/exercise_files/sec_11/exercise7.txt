@@ -11,6 +11,14 @@ var database = [
   {
     username: "uname",
     password: "pword"
+  },
+  {
+    username: "sally",
+    password: "123"
+  },
+  {
+    username: "ingrid",
+    password: "777"
   }
 ];
 
@@ -29,3 +37,25 @@ var newsfeed = [
     timeline: "More"
   }
 ];
+
+function isUserValid(user, pw) {
+  for (var i = 0; i < database.length; i++){
+    if (database[i].username === user && database[i].password === pw) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function signIn(user, pw) {
+  if (isUserValid(user, pw)) {
+    console.log(newsfeed)
+  } else {
+      alert("Sorry, wrong username and password!");
+  }
+}
+
+var usernamePrompt = prompt("What's your username?");
+var passwordPrompt = prompt("What's your password?");
+
+signIn(usernamePrompt, passwordPrompt);
