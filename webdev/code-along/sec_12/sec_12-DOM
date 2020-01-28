@@ -3,3 +3,5 @@ document.getElementsByClassName("");
 document.getElementById("");
 document.querySelector("");
 document.querySelectorAll("");
+document.querySelector("").getAttribute("");
+document.querySelector("").setAttribute("");
