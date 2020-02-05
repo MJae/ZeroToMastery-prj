@@ -1,8 +1,29 @@
-// This returns an array of buttons
-var button = document.getElementsByTagName("button");
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var ul = document.querySelector("ul");
 
-// Writing just "button" instead of "button[0]" will result in error
-// because of the array return in previous line
-button[0].addEventListener("click", function(){
-  console.log("CLICK!!!");
-})
+function inputlength() {
+  return input.value.length;
+}
+
+function createListElement() {
+  var li = document.createElement("li");
+  li.appendChild(document.createTextNode(input.value));
+  ul.appendChild(li);
+  input.value = '';
+}
+
+function addToListClick() {
+  if (inputlength() > 0) {
+    createListElement();   
+  }
+}
+
+function addToListEnter() {
+  if (inputlength() > 0 && event.keyCode === 13) {
+    createListElement();
+  }
+}
+
+button.addEventListener("click", addToListClick);
+input.addEventListener("keypress", addToListEnter);
