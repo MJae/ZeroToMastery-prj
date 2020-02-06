@@ -46,7 +46,7 @@ listItems.forEach(function(item){
 // Add buttons next to each list item to delete the item
 // when clicked on its corresponding delete button.
 function removeListItem() {
-	var toRemove = document.getElementById(this.id);
+	var toRemove = document.getElementById(this.parentElement.id);
 	ul.removeChild(toRemove);
 }
 
