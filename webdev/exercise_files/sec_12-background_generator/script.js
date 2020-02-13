@@ -17,3 +17,10 @@ function setGradient() {
 color1.addEventListener("input", setGradient);
 
 color2.addEventListener("input", setGradient);
+
+// Write code so that the colour inputs match
+// the background generated on the first page load. 
+
+// Display the initial CSS linear gradient property on page load.
+
+window.addEventListener("load", setGradient);
